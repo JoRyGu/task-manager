@@ -1,7 +1,7 @@
 import { BaseEntity, Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 import { TaskStatus } from './taskStatus.enum';
 
-@Entity()
+@Entity('tasks')
 export class Task extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
